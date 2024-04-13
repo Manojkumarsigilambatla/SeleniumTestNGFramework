@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [EcommerceWebsite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="testConfigurations.Listener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Negative_TestCases(failed)" verbose="0">
+    <classes>
+      <class name="Testcases.NegativeTestCases">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="CloseTheDriver"/>
+          <include name="negativeLogin"/>
+        </methods>
+      </class> <!-- Testcases.NegativeTestCases -->
+    </classes>
+  </test> <!-- Negative_TestCases(failed) -->
+</suite> <!-- Failed suite [EcommerceWebsite] -->
